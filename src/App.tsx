@@ -3,7 +3,7 @@ import BeerCard from "./components/BeerCard"
 
 const App = () => {
 
-  const [beers,setBeers] = useState()
+  const [beers,setBeers] = useState<typeof BeerCard[]>([])
   useEffect(() =>{  
     fetch("data.json")
       .then(response => {return response.json()})
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="beerCardWrapper">
-      <BeerCard/>
+
     </div>
   )
 }

@@ -1,6 +1,25 @@
-const BeerCard = () => {
+
+const BeerCard = (
+  image:string = "",
+  price:string = "",
+  name:string = "",
+  available:string = "",
+
+
+  
+) => {
+
+
+
+
   return (
-    <div className='beerCard'>Beer Card</div>
+    <div className='beerCard'>
+      <img src={image} alt="" />
+      <p>{price}</p>
+      <p>{name}</p>
+      <p>{available}</p>
+
+    </div>
   )
 }
 
